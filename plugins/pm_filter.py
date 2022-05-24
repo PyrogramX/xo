@@ -778,9 +778,9 @@ async def advantage_spell_chok(msg):
     #btn.append([InlineKeyboardButton(text="Close", callback_data=f'spolling#{user}#close_spellcheck')])
     await msg.reply("I couldn't find anything\nPlease correct movie spelling❗If you're sure movie name is correct then wait we will upload movie soon.",) 
                     #reply_markup=InlineKeyboardMarkup(btn))
-        await asyncio.sleep(8)
-        await k.delete()
-        return
+    await asyncio.sleep(8)
+    await k.delete()
+    return
 
 async def manual_filters(client, message, text=False):
     group_id = message.chat.id
