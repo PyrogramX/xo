@@ -135,8 +135,8 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
-            k = await query.message.edit('Sorry.. This movie name is wrong❌\nMake sure you've wrote correct movie spelling.')
-            await asyncio.sleep(10)
+            k = await query.message.edit('Sorry.. This movie name is wrong❌\nMake sure movie name spelling is correct.')
+            await asyncio.sleep(60) 
             await k.delete()
 
 
@@ -778,6 +778,9 @@ async def advantage_spell_chok(msg):
     #btn.append([InlineKeyboardButton(text="Close", callback_data=f'spolling#{user}#close_spellcheck')])
     await msg.reply("I couldn't find anything\nPlease correct movie spelling❗If you're sure movie name is correct then wait we will upload movie soon.",) 
                     #reply_markup=InlineKeyboardMarkup(btn))
+        await asyncio.sleep(8)
+        await k.delete()
+        return
 
 async def manual_filters(client, message, text=False):
     group_id = message.chat.id
