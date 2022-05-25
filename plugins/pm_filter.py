@@ -778,7 +778,7 @@ async def advantage_spell_chok(msg):
      #               text=f"Help or RequestMovie",
      #               url=f"https://t.me/hdmoviestudioinquiry",
      #           ),]
-              for k, movie in enumerate(movielist)]
+             [for k, movie in enumerate(movielist)]
     btn.append([InlineKeyboardButton(text="Close", callback_data=f'spolling#{user}#close_spellcheck')])
     await msg.reply("I couldn't find anything\nPlease send correct movie spelling❗👉🏻<a href='https://t.me/howtowatchlink'>How To Download ❓</a> Or <a href='https://t.me/hdmoviestudioinquiry'>Contact Help or Request Movie</a>",
                     reply_markup=InlineKeyboardMarkup(btn))
