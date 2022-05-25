@@ -135,9 +135,9 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
-            k = await query.message.edit('Sorry.. This movie name is wrong❌\nMake sure movie name spelling is correct.')
+            k = await query.message.edit('Sorry.. This movie name is wrong❌\nMake sure movie spelling is correct. Request movie 👉🏻 @HdMovieStudioInquiry')
             await asyncio.sleep(60) 
-            await k.delete()
+            await k.delete() 
 
 
 @Client.on_callback_query()
@@ -776,7 +776,7 @@ async def advantage_spell_chok(msg):
         )
     ] for k, movie in enumerate(movielist)]
     #btn.append([InlineKeyboardButton(text="Close", callback_data=f'spolling#{user}#close_spellcheck')])
-    await msg.reply("Sorry.. I couldn't find anything related your query\nPlease send correct movie spelling❗\n\nIf movie name is correct✅ then plz 🙏 wait we try to upload this movie 🍿🎥 as soon as possible🙊 Thanks!",) 
+    await msg.reply("Sorry.. I couldn't find anything related your query\nPlease send correct movie spelling❗\nIf movie name is correct✅ then plz 🙏 wait we try to upload this movie 🍿🎥 as soon as possible🙊 Thanks!\n\nक्षमा करें.. मुझे आपकी क्वेरी से संबंधित कुछ भी नहीं मिला\nकृपया सही फिल्म नाम भेजें❗\nअगर फिल्म का नाम सही है तो कृपया 🙏 प्रतीक्षा करें हम इस फिल्म को जल्द से जल्द अपलोड करने का प्रयास करेंगे🙊 धन्यवाद!",) 
                     #reply_markup=InlineKeyboardMarkup(btn))
     
 
