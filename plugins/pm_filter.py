@@ -770,30 +770,16 @@ async def advantage_spell_chok(msg):
         return
     SPELL_CHECK[msg.message_id] = movielist
     btn = [[
-                InlineKeyboardButton(
-                    text=f"How To Download ❓",
-                    url=f"https://t.me/howtowatchlink",
-                ),
-                InlineKeyboardButton(
-                    text=f"Help or RequestMovie",
-                    url=f"https://t.me/hdmoviestudioinquiry",
-                ),
-             ] for k, movie in enumerate(movielist)]
+        InlineKeyboardButton(
+            text=movie.strip(),
+            callback_data=f"spolling#{user}#{k}",
+        )
+    ] for k, movie in enumerate(movielist)]
     #btn.append([InlineKeyboardButton(text="Close", callback_data=f'spolling#{user}#close_spellcheck')])
     await msg.reply("I couldn't find anything\nPlease send correct movie spelling❗👉🏻<a href='https://t.me/howtowatchlink'>How To Download ❓</a> Or <a href='https://t.me/hdmoviestudioinquiry'>Contact Help or Request Movie</a>",) 
                     #reply_markup=InlineKeyboardMarkup(btn))
     
 
-op = [[
-                InlineKeyboardButton(
-                    text=f"How To Download ❓",
-                    url=f"https://t.me/howtowatchlink",
-                ),
-                InlineKeyboardButton(
-                    text=f"Help or RequestMovie",
-                    url=f"https://t.me/hdmoviestudioinquiry",
-                ),
-            ]
 
 async def manual_filters(client, message, text=False):
     group_id = message.chat.id
