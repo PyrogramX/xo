@@ -780,7 +780,7 @@ async def advantage_spell_chok(msg):
                 ),
             ] for k, movie in enumerate(movielist)]
     btn.append([InlineKeyboardButton(text="Close", callback_data=f'spolling#{user}#close_spellcheck')])
-    await msg.reply("I couldn't find anything\nPlease send correct movie spelling❗",) 
+    await msg.reply("I couldn't find anything\nPlease send correct movie spelling❗",
                     reply_markup=InlineKeyboardMarkup(btn))
     #await asyncio.sleep(8)
     #await msg.delete()
