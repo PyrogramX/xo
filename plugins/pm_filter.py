@@ -769,7 +769,7 @@ async def advantage_spell_chok(msg):
         await k.delete()
         return
     SPELL_CHECK[msg.message_id] = movielist
-    btn = [[
+    bt = [[
                 InlineKeyboardButton(
                     text=f"How To Download ❓",
                     url=f"https://t.me/howtowatchlink",
@@ -779,9 +779,9 @@ async def advantage_spell_chok(msg):
                     url=f"https://t.me/hdmoviestudioinquiry",
                 ),
             ] for k, movie in enumerate(movielist)]
-    btn.append([InlineKeyboardButton(text="Close", callback_data=f'spolling#{user}#close_spellcheck')])
-    await msg.reply("I couldn't find anything\nPlease send correct movie spelling❗",
-                    reply_markup=InlineKeyboardMarkup(btn))
+    bt.append([InlineKeyboardButton(text="Close", callback_data=f'spolling#{user}#close_spellcheck')])
+    await msg.reply("I couldn't find anything\nPlease send correct movie spelling❗", 
+                    reply_markup=InlineKeyboardMarkup(bt))
     #await asyncio.sleep(8)
     #await msg.delete()
     #return
