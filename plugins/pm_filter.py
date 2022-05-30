@@ -427,7 +427,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('🤖 Updates', url='https://t.me/Hindi_Film_Studio')
         ], [
             InlineKeyboardButton('🔙 Back', callback_data='start'),
-            InlineKeyboardButton('🔮 Status', callback_data='stats')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
