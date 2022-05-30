@@ -404,10 +404,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('✚ Add me to your Group', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('🔍 How to download movie?', url=f'https://t.me/howtowatchlink')
         ], [
-            InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🤖 Updates', url='https://t.me/VasuBots')
+            InlineKeyboardButton('📨 Support', url='https://t.me/HindiFilm_bot'),
+            InlineKeyboardButton('🤖 Updates', url='https://t.me/Hindi_Film_Studio')
         ], [
             InlineKeyboardButton('ℹ️ Help', callback_data='help'),
             InlineKeyboardButton('😊 About', callback_data='about')
@@ -421,13 +421,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer('Okay! 😚')
     elif query.data == "help":
         buttons = [[
-            InlineKeyboardButton('Manual Filter', callback_data='manuelfilter'),
-            InlineKeyboardButton('Auto Filter', callback_data='autofilter')
+            InlineKeyboardButton('🔍 How to download movie?', url=f'https://t.me/howtowatchlink')
         ], [
-            InlineKeyboardButton('Connection', callback_data='coct'),
-            InlineKeyboardButton('Extra Mods', callback_data='extra')
+            InlineKeyboardButton('📨 Support', url='https://t.me/HindiFilm_bot'),
+            InlineKeyboardButton('🤖 Updates', url='https://t.me/Hindi_Film_Studio')
         ], [
-            InlineKeyboardButton('🏠 Home', callback_data='start'),
+            InlineKeyboardButton('🔙 Back', callback_data='start'),
             InlineKeyboardButton('🔮 Status', callback_data='stats')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
