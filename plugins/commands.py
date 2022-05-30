@@ -90,7 +90,7 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('🔍 How to download movie?', url=f'https://t.me/howtowatchlink')
             ],[
-            InlineKeyboardButton('📨 Support, url='https://t.me/HindiFilm_bot'),
+            InlineKeyboardButton('📨 Support', url='https://t.me/HindiFilm_bot'),
             InlineKeyboardButton('🤖 Updates', url='https://t.me/Hindi_Film_Studio')
             ],[
             InlineKeyboardButton('ℹ️ Help', callback_data='help'),
