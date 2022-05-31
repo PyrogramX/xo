@@ -406,7 +406,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('✚ Add me to your Group', url=f'http://t.me/MovieGroupsBot?startgroup=true')
         ], [
-            InlineKeyboardButton('📨 Support', url='https://t.me/HindiFilm_bot'),
+            InlineKeyboardButton('📨 Support', url='https://t.me/hdmoviestudioinquiry'),
             InlineKeyboardButton('🤖 Updates', url='https://t.me/Hindi_Film_Studio')
         ], [
             InlineKeyboardButton('ℹ️ Help', callback_data='help'),
@@ -423,7 +423,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('✚ Add me to your Group', url=f'http://t.me/MovieGroupsBot?startgroup=true')
         ], [
-            InlineKeyboardButton('📨 Support', url='https://t.me/HindiFilm_bot'),
+            InlineKeyboardButton('📨 Support', url='https://t.me/hdmoviestudioinquiry'),
             InlineKeyboardButton('🤖 Updates', url='https://t.me/Hindi_Film_Studio')
         ], [
             InlineKeyboardButton('🔙 Back', callback_data='start'),
